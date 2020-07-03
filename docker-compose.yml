@@ -1,0 +1,6 @@
+version: '2'
+services:
+  mc-server:
+    build: .
+    ports:
+    - 25565:25565

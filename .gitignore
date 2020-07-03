@@ -1,0 +1,17 @@
+# Temporary files
+*.log
+
+# IDE
+.vs
+.idea
+
+# Non essential server files
+/mc-eternal-server
+# !/mc-eternal-server/config/
+# !/mc-eternal-server/libraries/
+# !/mc-eternal-server/mods/
+# !/mc-eternal-server/scripts/
+# !/mc-eternal-server/server.properties
+# !/mc-eternal-server/server-icon.png
+# !/mc-eternal-server/*.jar
+# !/mc-eternal-server/*.json
