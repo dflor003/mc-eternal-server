@@ -1,5 +1,3 @@
-crash-reports
-/mc-eternal-server/world
-/mc-eternal-server/tmp
-/mc-eternal-server/backups
-/mc-eternal-server/logs
+/mc-eternal-server
+/world
+/backups

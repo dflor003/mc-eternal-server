@@ -1,6 +1,23 @@
-version: '2'
+version: '3.8'
 services:
   mc-server:
     build: .
     ports:
     - 25565:25565
+    volumes:
+    - type: bind
+      source: ./world
+      target: /opt/server/world
+    - type: bind
+      source: ./backups
+      target: /opt/server/backups
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+
+volumes:
+  world:
+  backups:
